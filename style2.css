@@ -1,0 +1,214 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* roots */
+:root {
+    --primary-color: #a1ff69;
+    --heading-color: #fff;
+    --body-bg: #13252f;
+    --small-text-color: #acb2b2;
+    --font-name: "Montserrat", sans-serif;
+}
+
+/* base style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: var(--body-bg);
+    font-family: var(--font-name);
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+
+
+}
+
+p {
+    color: var(--small-text-color);
+    font-size: 0.9rem;
+    /* border: dashed 2px wheat; */
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--heading-color);
+}
+
+
+
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding: 0px 20px;
+    /* border: dashed 2px green; */
+
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* header style */
+
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    /* border: dashed 2px red; */
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: dashed 2px white;
+
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    /* border: dashed 2px purple; */
+
+}
+
+.nav_link {
+    color: var(--small-text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.nav_link:hover {
+    color: var(--primary-color);
+}
+
+.nav_item:nth-child(1) a {
+    color: #fff;
+}
+
+
+/* /* problem with underline */
+/* .nav_item:nth-child(1) a::before {
+    content: " " ;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    color: var(--primary-color);
+    position: absolute;
+    top: 59px;
+    left: 761.7px;
+    z-index: 999;
+} */
+
+
+.mobile_menu {
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+    
+
+}
+
+.header_sticky {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;     /*SOMETHING NEW */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border: dashed 2px orange;
+}
+
+.hero_wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    border: dashed 2px magenta;
+}
+
+.hero_content,.hero_img{
+width: 100%;
+}
+
+.hero_img img{
+    width: 100%;
+}
+
+.hero_content h2{
+    font-size: 3rem;
+    line-height: 65px;
+}
+
+.hero_content p{
+    margin-top:40px;
+    position: relative;
+    left: 0;
+
+    border: dashed 1px brown;
+
+}
+
+.hero_btns{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 40px;
+}
+
+
+.view_more-btn{
+    padding: 7px 35px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;   /* cursor pointter is not working*/
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    
+
+}
+
+.play_btn{ /* Play button is not working */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+   
+}
+
+/* .ri-play-fill{       this is also not working
+    width: 2px;
+    height: 2px;
+} */
